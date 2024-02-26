@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scenes/Ground.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/kenney_platformercharacters/PNG/Zombie/Poses/zombie_swim1.png" type="Texture" id=2]
 [ext_resource path="res://scenes/Player.gd" type="Script" id=3]
+[ext_resource path="res://scenes/Sprite.gd" type="Script" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 39.5, 47 )
@@ -24,6 +25,7 @@ script = ExtResource( 3 )
 
 [node name="Sprite" type="Sprite" parent="Player"]
 texture = ExtResource( 2 )
+script = ExtResource( 4 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 position = Vector2( 1.5, 3 )
